@@ -1,0 +1,12 @@
+# requirements.txt (exclude torch)
+# do
+# pip install torch==2.5.1 torchvision --index-url https://download.pytorch.org/whl/cu118
+# before
+# pip install -r requirements.txt
+
+ultralytics>=8.2.0
+opencv-python
+pyyaml
+fastapi
+
+yolo detect train model=yolov8n.pt data=Cobacobi.v1i.yolov8/data.yaml epochs=100 imgsz=640 batch=16 device=0
